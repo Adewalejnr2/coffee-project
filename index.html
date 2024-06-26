@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      class="bg-amber-950 flex gap-2 justify-between items-center p-8 sticky top-0 z-10 w-full md:px-12 lg:px-24"
+    >
+      <div id="logo" class="flex gap-4">
+        <img src="./coffee_logo.png" alt="coffee" />
+        <h1 class="text-white text-3xl pt-4 font-bold">Coffee</h1>
+      </div>
+
+      <div class="text-3xl text-white btn-contaainer">
+        <button class="open-btn">
+          <i class="open-btn fa-solid fa-bars lg:hidden"></i>
+        </button>
+        <button class="close-btn">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+      <ul
+        class="hidden flex gap-2 text-white text-lg items-center justify-end md:hidden lg:flex lg:pr-0"
+      >
+        <li>
+          <a href="#home" class="py-2 px-4 rounded-full hover:bg-amber-500"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="py-2 px-6 rounded-full hover:bg-amber-500"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#service" class="py-2 px-6 rounded-full hover:bg-amber-500"
+            >Service</a
+          >
+        </li>
+        <li>
+          <a href="#whyus" class="py-2 px-6 rounded-full hover:bg-amber-500"
+            >Why Us</a
+          >
+        </li>
+        <li>
+          <a href="#gallery" class="py-2 px-6 rounded-full hover:bg-amber-500"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="py-2 px-6 rounded-full hover:bg-amber-500"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div
+      id="sidebar"
+      class="fixed top-0 bg-white w-full bottom-0 grid place-content-center transition-all duration-300 ease-in sidebarClose"
+    >
+      <ul
+        class="text-lg text-black font-medium font-bold p-5 text-center space-y-12"
+      >
+        <li>Home</li>
+        <li>About</li>
+        <li>Servce</li>
+        <li>Why Us</li>
+        <li>Gallery</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <header
+      class="lg:flex lg:flex lg:flex-row-reverse lg:gap-32 px-4 bg-amber-950 text-center text-white pb-12 lg:px-20 lg:py-40"
+    >
+      <div class="lg:max-w-lg fuel lg:basis-2/5">
+        <img src="./cofffee_image.png" alt="coffeeImage" class="mx-auto p-8" />
+      </div>
+      <div class="fuel lg:basis-3/5 lg:text-left lg:ml-4">
+        <h2
+          class="text-4xl text-amber-500 font-bold pt-8 lg:text-left md:text-5xl lg:ml-4"
+        >
+          Fuel Your Passion
+        </h2>
+        <h2 class="text-3xl font-bold py-8 md:text-4xl md:p-4">
+          Discover the Magic in Every Cup
+        </h2>
+        <h2 class="py-4 mx-4 md:text-xl">
+          Welcome to our coffee paradise, where every beantells a story and
+          every cup sparks
+        </h2>
+        <div class="flex gap-8 justify-center lg:justify-start">
+          <button
+            class="bg-amber-500 p-4 px-4 rounded-full font-bold hover:border-2 text-black hover:text-white hover:bg-amber-950 hover:border-white hover:border-solid transition duration-1000 ease-in-out md:px-12 md:text-lg md:my-8"
+          >
+            Order online</button
+          ><button
+            class="border-2 rounded-full py-4 px-4 font-bold border-3 hover:text-black hover:bg-amber-500 hover:border-0 transition duration-1000 ease-in-out md:px-12 md:text-lg md:my-8"
+          >
+            Book A Table
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="bg-white lg:px-20">
+      <div class="lg:flex lg:items-center">
+        <div class="lg:basis-3/6">
+          <div
+            id="aboutUs"
+            class="text-3xl font-bold text-center pt-12 grid justify-center"
+          >
+            <div class="py-8">
+              <p class="pt-4">ABOUT US</p>
+              <div
+                class="w-15 h-1.5 bg-amber-500 mx-6 my-2 border-0 rounded-full"
+              ></div>
+            </div>
+          </div>
+          <p
+            class="text-center text-slate-800 text-lg p-12 font-bold md:text-xl lg:px-20"
+          >
+            We at Coffee House, located in Berndorf, Germany, are one of the
+            favorite hangouts for coffee and conversations. Our goal is to offer
+            the best experience to our guests, ensuring an authentic coffee
+            drinking experience in a warm, friendly, and relaxed environment. We
+            aim to bring a sense of relaxation to the city with our cozy space,
+            complete with comfortable couches to lounge in while you enjoy your
+            coffee.
+          </p>
+        </div>
+        <img
+          src="./about_coffee.png"
+          alt="blackCoffee"
+          class="mx-auto p-12 my-2 lg:basis-3/6"
+        />
+      </div>
+    </section>
+    <main class="bg-zinc-800 pb-12 lg:px-20">
+      <div
+        id="ourService"
+        class="text-center text-white pt-16 grid justify-center"
+      >
+        <p class="text-3xl text-center font-bold">OUR SERVICE</p>
+        <div
+          class="w-16 h-1.5 bg-amber-500 mx-auto my-2 border-0 rounded-full"
+        ></div>
+        <div id="serviceImg" class="grid md:grid-cols-2 lg:grid-cols-3">
+          <div class="p-4">
+            <img
+              src="./hot_beverages.png"
+              alt="hot beverages"
+              class="mx-auto p-12 md:p-8"
+            />
+            <p class="text-3xl font-bold">Hot Beverages</p>
+            <p class="p-4 text-lg">
+              Wide range of Steaming hot coffee to make you fresh and light.
+            </p>
+          </div>
+          <div class="p-4">
+            <img
+              src="./cold_beverages.png"
+              alt="cold beverages"
+              class="mx-auto p-8 md:p-8"
+            />
+            <p class="text-3xl font-bold">Cold Beverages</p>
+            <p class="p-4 text-lg">
+              Creamy and frothy cold coffee to make you feel cool from inside.
+            </p>
+          </div>
+          <div class="p-4">
+            <img
+              src="./refreshment.png"
+              alt="refreshment"
+              class="mx-auto p-8 md:p-4"
+            />
+            <p class="text-3xl font-bold">Refreshment</p>
+            <p class="p-4 text-lg">
+              Fruit and icy refreshing drink to make you feel good.
+            </p>
+          </div>
+          <div class="p-4">
+            <img
+              src="./special_combos.png"
+              alt="Special Combos"
+              class="mx-auto p-8 md:p-4"
+            />
+            <p class="text-3xl font-bold">Special Combos</p>
+            <p class="p-4 text-lg">
+              Now it's really to chose your favourite eating and drinking
+              combinations.
+            </p>
+          </div>
+          <div class="p-4">
+            <img
+              src="./burger_frenchFries.png"
+              alt="French Burger"
+              class="mx-auto p-8 md:p-4"
+            />
+            <p class="text-3xl font-bold">Burger & French Fries</p>
+            <p class="p-4 text-lg md:p-4">
+              Yummy! Quick bites to satisfy youy small size hunger.
+            </p>
+          </div>
+          <div class="p-4">
+            <img src="./dessert.png" alt="dessert" class="mx-auto p-8" />
+            <p class="text-3xl font-bold">Desserts</p>
+            <p class="p-4 text-lg pb-12">
+              This for sure would satiate your palate and take yu on a culinary
+              treat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <article class="bg-gray-200">
+      <div>
+        <p class="text-3xl text-center font-bold pt-12">WHY US?</p>
+        <div
+          class="w-12 h-1.5 bg-amber-500 mx-auto my-2 border-0 rounded-full"
+        ></div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3">
+        <div class="p-4 text-center">
+          <img
+            src="./delicious.png"
+            alt="Delicious emoji"
+            class="mx-auto w-32 md:p-4"
+          />
+          <p class="text-3xl font-bold">Delicious Food</p>
+          <p class="p-4 text-lg">
+            With a lavish spread of finger licking food, we serve to satisfy
+            your palate and take you on a culinary treat.
+          </p>
+        </div>
+        <div class="p-4 text-center">
+          <img
+            src="./pleasant.png"
+            alt="Pleasant Ambience"
+            class="mx-auto w-32"
+          />
+          <p class="text-3xl font-bold">Pleasant Ambience</p>
+          <p class="p-4 text-lg md:p-4">
+            We seek to serve all our guest with the diing experience. We provide
+            perfect ambience to cherish special moments.
+          </p>
+        </div>
+        <div class="p-4 text-center">
+          <img src="./hospitality.png" alt="hospitality" class="mx-auto w-32" />
+          <p class="text-3xl font-bold">Delicious</p>
+          <p class="p-4 pb-12 text-lg">
+            Our staff members are happy to help. We go to the extra mile to ake
+            you happy.
+          </p>
+        </div>
+      </div>
+    </article>
+    <section class="mx-12">
+      <div>
+        <p class="text-3xl text-center font-bold pt-24">GALLERRY</p>
+        <div
+          class="w-20 h-1.5 bg-amber-500 mx-auto my-2 border-0 rounded-full"
+        ></div>
+      </div>
+      <div
+        class="justify-center grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-20 lg:px-20"
+      >
+        <img src="./gallery_1.jpg" alt="" class="border-0 rounded-xl" />
+        <img src="./gallery_2.jpg" alt="" class="border-0 rounded-xl" />
+        <img src="./gallery_3.jpg" alt="" class="border-0 rounded-xl h-full" />
+        <img src="./gallery_4.jpg" alt="" class="border-0 rounded-xl" />
+        <img src="./gallery_5.jpg" alt="" class="border-0 rounded-xl" />
+        <img src="./gallery_6.jpg" alt="" class="border-0 rounded-xl" />
+      </div>
+    </section>
+    <section class="py-20 bg-gray-200 px-8 lg:px-20">
+      <div class="my-20">
+        <p class="text-xl text-center font-bold">CONTACT US</p>
+        <div
+          class="w-20 h-1.5 bg-amber-500 mx-auto my-2 border-0 rounded-full"
+        ></div>
+      </div>
+
+      <div
+        class="lg:flex lg:flex-row-reverse lg:gap-32 lg: items-center lg:mt-12 lg:self-start"
+      >
+        <div class="mr-8 justify-center lg:basis-2/5 md:mr-16 lg:ml-16">
+          <div class="flex gap-4 items-top ml-16 mb-4">
+            <i class="fa-solid fa-location-crosshairs text-2xl"></i>
+            <div>
+              <p class="text-xl font-bold">Our Location</p>
+              <p class="text-lg">Berndorf, Germany</p>
+            </div>
+          </div>
+
+          <div class="flex ml-16 gap-4 items-top mb-4 lg:mt-20">
+            <i class="fa-solid fa-envelope text-2xl"></i>
+            <div>
+              <p class="text-xl font-bold">General Enquries</p>
+              <p class="text-lg">coffeeshop@xyz.com</p>
+            </div>
+          </div>
+
+          <div class="flex ml-16 gap-4 items-top mb-4 lg:mt-20">
+            <i class="fa-solid fa-phone-volume text-2xl"></i>
+            <div>
+              <p class="text-xl font-bold">Call Us</p>
+              <p class="text-lg">+01 92728239</p>
+            </div>
+          </div>
+
+          <div class="flex ml-16 gap-4 lg:mt-20">
+            <i class="fa-solid fa-clock text-2xl"></i>
+            <div>
+              <p class="text-xl font-bold">Our Timming</p>
+              <p class="text-lg">Mon-Sun:10:00 AM - 7:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <form action="required" class="grid mt-32 lg: basis-3/4">
+          <label for="fullName" class="mx-4 text-lg font-bold">Full Name</label>
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="py-3 mx-4 border-solid rounded border-black border text-lg pt-2 pl-2"
+          />
+
+          <label for="email" class="mx-4 text-lg font-bold mt-8"
+            >Your Email</label
+          >
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="py-3 mx-4 border-solid rounded border-black border text-lg pt-2 pl-2"
+          />
+
+          <label for="number" class="mx-4 text-lg font-bold mt-8"
+            >Your Number</label
+          >
+          <input
+            type="text"
+            placeholder="Your Number"
+            class="py-3 mx-4 border-solid rounded border-black border pt-2 pl-2 text-lg mb-4"
+          />
+
+          <label for="text" class="mx-4 text-lg font-bold mt-8">Textarea</label>
+          <textarea
+            name=""
+            placeholder="Your Message"
+            id=""
+            class="border rounded border-gray-900 pt-2 pl-2 m-4 h-40 lg:h-56"
+          ></textarea>
+
+          <button
+            class="p-4 bg-amber-950 border rounded-full w-40 text-white font-bold mx-4 mb-12"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer
+      class="bg-black py-16 px-12 lg:flex lg:justify-between lg:items-top lg:px-32"
+    >
+      <div class="flex items-center gap-4 lg:self-start">
+        <img src="./coffee_logo.png" alt="" />
+        <p class="text-white text-2xl font-bold">Coffee</p>
+      </div>
+
+      <div class="text-white pt-8">
+        <p class="font-bold text-xl">Useful Links</p>
+        <ul class="text-lg pb-4">
+          <li class="py-4">About</li>
+          <li>Service</li>
+          <li class="py-4">Why Us</li>
+          <li>Gallery</li>
+          <li class="py-4">Contact</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-white text-xl mt-8 font-bold">Contact</p>
+        <div class="flex gap-8 text-white my-4 items-center">
+          <i class="fa-solid fa-location-crosshairs text-white text-xl"></i>
+          <p class="text-lg">Berndorf, Germany</p>
+        </div>
+        <div class="text-white flex gap-8 items-center">
+          <i class="fa-solid fa-phone-volume text-xl"> </i>
+          <p class="text-lg">+01 9272839</p>
+        </div>
+        <div class="text-white flex items-center gap-8 text-lg py-4">
+          <i class="fa-solid fa-clock text-xl text-white"></i>
+          <p>Mon-Sun:10:00 AM - 7:00 PM</p>
+        </div>
+      </div>
+
+      <div class="text-white mt-8">
+        <p class="text-xl font-bold">Follow</p>
+        <div class="flex items-center gap-8 text-xl mt-4">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
